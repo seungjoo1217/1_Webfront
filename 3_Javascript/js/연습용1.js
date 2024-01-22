@@ -40,14 +40,14 @@ function plusFn() {
 
 
 // ---------------------------------------------------------
-const num1 = document.getElementById("num1");
-const num2 = document.getElementById("num2");
+const numberone = document.getElementById("numberone");
+const numbertwo = document.getElementById("numbertwo");
 
 const result = document.getElementById("result");
 
 function plus() {
-    const value1 = Number(num1.value);
-    const value2 = Number(num2.value);
+    const value1 = Number(numberone.value);
+    const value2 = Number(numbertwo.value);
 
     result.innerText = value1 + value2;
 }

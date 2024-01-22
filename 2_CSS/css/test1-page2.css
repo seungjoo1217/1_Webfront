@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+
+    /*border: 1px solid white;*/
+}
+
+body {
+    margin: 100px 100px;
+    padding: 0 0;
+    background-color: black
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+.blank {
+    height: 50px;
+}
+
+
+.name {
+    height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+#title-name {
+    text-shadow: 3px 0 gray;
+    padding: 30px 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    flex-basis: 15%;
+    font-size: 60px;
+    text-align: center;
+}
+#content-name {
+    padding-left: 10px;
+    flex-basis: 85%;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+.age {
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+#title-age {
+    text-shadow: 3px 0 gray;
+    padding: 30px 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    flex-basis: 15%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+#content-age {
+    padding-left: 10px;
+    flex-basis: 85%;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+
+
+.school {
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#title-school {
+    text-shadow: 3px 0 gray;
+    padding: 90px 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    flex-basis: 15%;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#content-school {
+    flex-basis: 85%;
+    font-size: 30px;
+    font-weight: lighter;
+
+    display: flex;
+    flex-direction: column;
+}
+#major {
+    flex-basis: 50px;
+    display: flex;
+}
+
+#title-major {
+    padding-right: 10px;
+    text-align: end;
+    border-right: 1px solid white;
+    flex-basis: 10%;
+    font-size: 25px;
+}
+#content-major {
+    padding-left: 10px;
+    flex-basis: 90%;
+    font-size: 18px;
+    color: rgb(168, 168, 168);
+}
+
+
+
+
+#semester {
+    flex-basis: 50px;
+    display: flex;
+}
+#title-semestor {
+    padding-right: 10px;
+    text-align: end;
+    border-right: 1px solid white;
+    flex-basis: 10%;
+    font-size: 25px;
+}
+#content-semestor {
+    padding-left: 10px;
+    flex-basis: 90%;
+    font-size: 18px;
+    color: rgb(168, 168, 168);
+}
+
+
+
+
+#club {
+    flex-basis: 50px;
+    display: flex;
+}
+#title-club {
+    padding-right: 10px;
+    text-align: end;
+    border-right: 1px solid white;
+    flex-basis: 10%;
+    font-size: 18px;
+}
+#content-club {
+    padding-left: 10px;
+    flex-basis: 90%;
+    font-size: 18px;
+    color: rgb(168, 168, 168);
+}
+
+
+
+
+
+
+
+
+.hello {
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#title-hello {
+    text-shadow: 3px 0 gray;
+    padding: 80px 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    flex-basis: 15%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+#content-hello {
+    padding-left: 10px;
+    color: rgb(155, 155, 155);
+    flex-basis: 85%;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+.fixed-area {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 150px;
+    height: 100px;
+
+    position:  fixed;
+
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+.fixed-area:hover {
+    text-shadow: 5px 5px 5px gray;
+}
+
+.fixed-area > a {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}

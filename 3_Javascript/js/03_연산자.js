@@ -140,6 +140,25 @@ function check() {
 
     count = 50;
 
-    console.log("count++ : ", count++);
-    console.log("후위 연산 후 count:", count);
+    console.log("count++ : ", count++); // 50 출력 후 51로 증가
+    console.log("후위 연산 후 count:", count); //51
+
+    console.log("count-- : ", count--); // 51 출력 후 50으로 감소
+    console.log("후위 연산 후 count:", count); //50
+
+
+
+    console.log("------------------------");
+
+    let a = 10;
+    let b = 5;
+    let c= ++a * b--;
+        // 1 , 2, 3
+
+    // 최종적으로 a,b,c 에 저장된 값은 얼마?
+    // a == 11
+    // b == 4
+    // c == 55
+
+    console.log(a, b, c);
 }

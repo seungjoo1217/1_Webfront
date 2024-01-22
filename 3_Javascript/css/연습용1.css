@@ -1,0 +1,9 @@
+#total {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body button {
+    width: 25px;
+    height: 25px;
+}

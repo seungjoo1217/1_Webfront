@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전화번호</title>
+
+    <link rel="stylesheet" href="../css/전화번호.css">
+</head>
+<body>
+    <div class="main">
+        <!--왼쪽창-->
+        <div id="left">
+            <!--숫자표시창-->
+            <div id="number-view"><span id="output"></span></div>
+
+            <!--숫자입력창-->
+            <div id="number-input">
+                <table class="num">
+                    <tr>
+                        <th><button onclick="num('1')">1</button></th>
+                        <th><button onclick="num('2')">2</button></th>
+                        <th><button onclick="num('3')">3</button></th>
+                    </tr>
+                    <tr>
+                        <th><button onclick="num('4')">4</button></th>
+                        <th><button onclick="num('5')">5</button></th>
+                        <th><button onclick="num('6')">6</button></th>
+                    </tr>
+                    <tr>
+                        <th><button onclick="num('7')">7</button></th>
+                        <th><button onclick="num('8')">8</button></th>
+                        <th><button onclick="num('9')">9</button></th>
+                    </tr>
+                    <tr>
+                        <th><button onclick="num('#')">#</button></th>
+                        <th><button onclick="num('0')">0</button></th>
+                        <th><button onclick="num('*')">*</button></th>
+                    </tr>
+                </table>
+            </div>
+
+            <!--추가, 초기화 버튼-->
+            <div id="buttons">
+                <button id="add">추가</button><br>
+                <button id="clear">초기화</button>
+            </div>
+        </div>
+
+
+
+        <!--오른쪽창-->
+        <div id="right">
+            <div>전화 번호 목록</div>
+
+            <!--전화번호목록추가-->
+            <div class="collection"></div>
+        </div>
+    </div>
+
+
+    <script src="../js/전화번호.js"></script>
+</body>
+</html>

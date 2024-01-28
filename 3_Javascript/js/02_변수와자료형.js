@@ -47,7 +47,7 @@ console.log("number1 : ", number1, " / number2 : ", number2);
 // var, let, const 의 차이점
 
 // 1. var (변수, 변수 선언 시 중복되는 변수명으로 선언 가능)
-// -> 먼저 선언된 변수가 나중에 선어노딘 변수에 덮어 씌워짐
+// -> 먼저 선언된 변수가 나중에 선언된 변수에 덮어 씌워짐
 
 var menu = "삼겹살";
 console.log("menu : " + menu);

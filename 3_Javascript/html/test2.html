@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+
+    <link rel="stylesheet" href="../css/test2.css">
+</head>
+<body>
+    <div class="main">
+        <table>
+
+            <tr>
+                <th>너비 :</th>
+                <td><input id="width" size="8"> px</td>
+                <th>높이 :</th>  
+                <td><input id="height" size="8"> px</td>
+            </tr>
+
+            <tr>
+                <th>글자크기 :</th>
+                <td><input id="fontSize" size="6"> px</td>
+                <th>굵기 :</th>
+                <td>
+                    <label for="normal">보통</label><input type="radio" name="fontWeight" id="normal">
+                    <label for="bold">굵게</label><input type="radio" name="fontWeight" id="bold">
+                </td>
+            </tr>
+
+            <tr>
+                <th>글자색 :</th>
+                <td><input id="fontColor" size="28"> </td>
+                <th>배경색 :</th>
+                <td><input id="backgroundColor" size="28"> </td>
+            </tr>
+
+            <tr>
+                <th>가로정렬 :</th>
+                <td colspan="3">
+                    <label for="left">왼쪽</label><input type="radio" name="WtextAlign" id="left">
+                    <label for="Wcenter">가운데</label><input type="radio" name="WtextAlign" id="Wcenter">
+                    <label for="right">오른쪽</label><input type="radio" name="WtextAlign" id="right">
+                </td>
+            </tr>
+
+            <tr>
+                <th>세로정렬 :</th>
+                <td colspan="3">
+                    <label for="up">위</label><input type="radio" name="HtextAlign" id="up">
+                    <label for="Hcenter">가운데</label><input type="radio" name="HtextAlign" id="Hcenter">
+                    <label for="down">아래</label><input type="radio" name="HtextAlign" id="down">
+                </td>
+            </tr>
+
+            <tr>
+                <th>출력 문자열 :</th>
+                <td colspan="3"><input id="inputText" size="71"> </td>
+            </tr>
+
+
+        </table>
+
+
+
+        <button id="add">적용하기</button>
+        <div id="box">
+            <span id="boxtext"></span>
+        </div>
+    </div>
+    
+
+    <script src="../js/test2.js"></script>
+</body>
+</html>

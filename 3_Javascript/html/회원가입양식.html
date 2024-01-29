@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입양식</title>
+
+    <style>
+        fieldset {
+            width: 500px;
+        }
+        #buttons {
+            text-align: center;
+        }
+        .confirm {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>회원 가입 양식</legend>
+            <table>
+                <tr>
+                    <th>아이디 :</th>
+                    <td><input type="text" id="inputId"></td>
+                    <td><button id="a">중복확인</button></td>
+                </tr>
+
+                <tr>
+                    <th>비밀번호 :</th>
+                    <td><input type="password" id="inputPw"></td>
+                    <td><span id="pwMessage"></span></td>
+                </tr>
+
+                <tr>
+                    <th>비밀번호 확인 :</th>
+                    <td><input type="password" id="inputPwConfirm"></td>
+                    <td><span id="pwConfirmRMessage"></span></td>
+                </tr>
+
+                <tr>
+                    <th>이름 :</th>
+                    <td><input type="text" id="inputName"></td>
+                    <td><span id="nameMessage"></span></td>
+                </tr>
+
+                <tr>
+                    <th>성별 :</th>
+                    <td>
+                        <label for="man"><input type="radio" name="gender" id="man">남자</label>
+                        <label for="woman"><input type="radio" name="gender" id="woman">여자</label>
+                    </td>
+                    <td><span id="nameMessage"></span></td>
+                </tr>
+
+                <tr>
+                    <th>전화번호 :</th>
+                    <td><input type="text" id="inputTel"></td>
+                    <td><span id="telMessage"></span></td>
+                </tr>
+
+                <tr>
+                    <th>이메일 :</th>
+                    <td><input type="text" id="inputEmail"></td>
+                    <td><span id="emailMessage"></span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" id="buttons">
+                        <button id="sign">회원가입</button>
+                        <button id="clear">초기화</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    
+
+    <script src="../js/회원가입양식.js"></script>
+</body>
+</html>

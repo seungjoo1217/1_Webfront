@@ -18,6 +18,10 @@
         .error {
             color: red;
         }
+        
+        #a {
+            width: 150px;
+        }
     </style>
 </head>
 <body>
@@ -28,7 +32,7 @@
                 <tr>
                     <th>아이디 :</th>
                     <td><input type="text" id="inputId"></td>
-                    <td><button id="a">중복확인</button></td>
+                    <td id="a"><button type="button">중복확인</button></td>
                 </tr>
 
                 <tr>
@@ -60,7 +64,7 @@
 
                 <tr>
                     <th>전화번호 :</th>
-                    <td><input type="text" id="inputTel"></td>
+                    <td><input type="text" id="inputTel" placeholder="'-'을 포함하여 입력해 주세요"></td>
                     <td><span id="telMessage"></span></td>
                 </tr>
 
@@ -73,7 +77,7 @@
                 <tr>
                     <td colspan="3" id="buttons">
                         <button id="clear">초기화</button>
-                        <button id="sign">회원가입</button>
+                        <button type="submit" id="sign">회원가입</button>
                     </td>
                 </tr>
             </table>

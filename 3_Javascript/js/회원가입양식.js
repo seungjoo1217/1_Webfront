@@ -1,8 +1,8 @@
 const checkObj = {
-    "inputId" : true, // 아이디
-    "inputPw" : true, // 비밀번호
+    "inputId" : false, // 아이디
+    "inputPw" : false, // 비밀번호
     "inputPwConfirm" : true, // 비번확인
-    "inputName" : true, // 이름
+    "inputName" : false, // 이름
     "gender" : true, // 성별
     "inputTel" : true // 전화번호
 }
@@ -73,7 +73,6 @@ document.getElementById("inputName").addEventListener("keyup", (e) => {
         checkObj["inputName"] = false;
 
     }
-    console.log(checkObj.inputName);
 });
 
 function validate() {
@@ -85,17 +84,15 @@ function validate() {
 
     if(!gender[0].checked && !gender[1].checked) {
         alert("성별을 선택해주세요.");
-        SubmitEvent.remove();
+        document.getElementById("sign").type = "button";
+        return;
     }
+
     if(regExp3.test(tel.value) == false){
         alert("전화번호의 형식이 올바르지 않습니다");
-        SubmitEvent.remove();
+        document.getElementById("sign").type = "button";
+        return;
     }
-}
-
-document.getElementById("sign").addEventListener("click", () => {
-    
-    validate();
 
     if(checkObj.inputId == true &&
         checkObj.inputPw == true &&
@@ -104,10 +101,19 @@ document.getElementById("sign").addEventListener("click", () => {
         checkObj.gender == true &&
         checkObj.inputTel == true) {
         alert("회원가입 성공");
+        document.getElementById("sign").type = "submit";
+
     } else {
         alert("회원가입 실패")
-        SubmitEvent.remove();
+        document.getElementById("sign").type = "button";
+        return;
     }
+}
+
+document.getElementById("sign").addEventListener("click", () => {
+    
+    validate();
+
 });
 
 document.getElementById("clear").addEventListener("click", () => {

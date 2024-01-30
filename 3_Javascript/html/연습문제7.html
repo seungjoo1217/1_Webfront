@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김밥집 키오스크</title>
+
+    <link rel="stylesheet" href="../css/연습문제7.css">
+</head>
+<body>
+    <header>
+        <h1>김밥집 키오스크</h1>
+    </header>
+
+    <main>
+        <h2>메뉴 선택</h2>
+
+        <section>
+            <div class="menu-item" onclick="addToCart('김밥', 3000)">김밥<br>₩3,000</div>
+            <div class="menu-item" onclick="addToCart('라면', 4500)">라면<br>₩4,500</div>
+            <div class="menu-item" onclick="addToCart('튀김', 5000)">튀김<br>₩5,000</div>
+            <div class="menu-item" onclick="addToCart('떡볶이', 6000)">떡볶이<br>₩6,000</div>
+            <div class="menu-item" onclick="addToCart('돈까스', 7500)">돈까스<br>₩7,500</div>
+            <div class="menu-item" onclick="addToCart('우동', 5000)">우동<br>₩5,000</div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>장바구니</h2>
+        <div id="empty-cart">장바구니가 비어 있습니다.</div>
+        <div id="cart"></div>
+        <div id="total">합계: ₩0</div>
+    </footer>
+
+    <script src="../js/연습문제7.js"></script>
+</body>
+</html>

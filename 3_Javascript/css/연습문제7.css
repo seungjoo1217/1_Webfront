@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'seolleimcool-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'seolleimcool-SemiBold';
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+header {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 800px;
+    margin: auto;
+}
+
+.menu-item {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+.cart-item {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item span:first-child{
+    flex-basis: 10%;
+}
+.cart-item span:nth-child(2){
+    flex-basis: 80%;
+}
+.cart-item span:last-child{
+    flex-basis: 10%;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.delete-button {
+    color: red;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#cart {
+    /* 초기에는 보이지 않도록 설정 */
+    display: none;
+    width: 800px;
+    margin: auto;
+}
+
+.container {
+    border: 2px solid lightgray;
+    border-radius: 6px;
+    width: 600px;
+    height: 50px;
+    margin: px 0;
+}
+#empty-cart {
+    /* 초기에는 보이도록 설정 */
+    display: block;
+}
+
+#total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}

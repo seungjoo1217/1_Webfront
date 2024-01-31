@@ -53,33 +53,54 @@ const image = document.getElementById("container2");
 
 createBtn.addEventListener("click", () => {
     image.style.backgroundImage = "none";
-    
+    player.level = 1;
+    player.hp = 100,
+    player.attack = 10,
+    player.defense = 5,
+    player.exp = 0,
+    player.gold = 0,
+    player.weapon = null,
+    player.armor = null
+
     let inputName;
     inputName = prompt("생성할 캐릭터의 이름을 입력해 주세요");
-    player.name = inputName;
-
-    let inputJob;
-    inputJob = prompt("생성할 캐릭터의 직업을 입력해 주세요 [마법사/전사]");
-    player.job = inputJob;
-
-    let inputGender;
-    inputGender = prompt("생성할 캐릭터의 성별을 입력해 주세요 [남자/여자]");
-    player.gender = inputGender;
-
-    alert("캐릭터가 생성되었습니다!")
-
-
-    if(player.job == "마법사" && player.gender == "남자") {
-        image.style.backgroundImage = "url('../rpg/남자_마법사.png')";
-    }else if(player.job == "마법사" && player.gender == "여자") {
-        image.style.backgroundImage = "url('../rpg/여자_마법사.png')";
-        image.style.backgroundSize = "400px 800px";
-    }else if(player.job == "전사" && player.gender == "남자") {
-        image.style.backgroundImage = "url('../rpg/남자_전사.png')";
-    }else if(player.job == "전사" && player.gender == "여자") {
-        image.style.backgroundImage = "url('../rpg/여자_전사.png')";
+    if(inputName == null) {
+        alert("취소");
     }
-    textWindow();
+    else{
+        player.name = inputName;
+
+        
+        let inputJob;
+        do {
+            inputJob = prompt("생성할 캐릭터의 직업을 입력해 주세요 [마법사/전사]");
+        } while (inputJob != "마법사" && inputJob != "전사");
+        player.job = inputJob;
+    
+
+
+        let inputGender;
+        do {
+            inputGender = prompt("생성할 캐릭터의 성별을 입력해 주세요 [남자/여자]");
+        } while (inputGender != "남자" && inputGender != "여자");
+        player.gender = inputGender;
+    
+        alert("캐릭터가 생성되었습니다!")
+    
+    
+        if(player.job == "마법사" && player.gender == "남자") {
+            image.style.backgroundImage = "url('../rpg/남자_마법사.png')";
+        }else if(player.job == "마법사" && player.gender == "여자") {
+            image.style.backgroundImage = "url('../rpg/여자_마법사.png')";
+            image.style.backgroundSize = "400px 800px";
+        }else if(player.job == "전사" && player.gender == "남자") {
+            image.style.backgroundImage = "url('../rpg/남자_전사.png')";
+        }else if(player.job == "전사" && player.gender == "여자") {
+            image.style.backgroundImage = "url('../rpg/여자_전사.png')";
+        }
+        textWindow();
+    }
+
 });
 
 const fight = document.getElementById("fight");

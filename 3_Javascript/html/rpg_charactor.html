@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG게임만들기-charactor</title>
+
+    <link rel="stylesheet" href="../css/rpg.charactor.css">
+</head>
+<body>
+    <div class="main">
+        <!--경험치랑 캐릭터 생성버튼-->
+        <div id="container1">
+
+            <!--경험치창-->
+            <div id="level">
+                <div class="text" id="name"></div>
+                <div class="text" id="job"></div>
+                <div class="text" id="gender"></div>
+                <div class="text" id="charactorLevel"></div>
+                <div class="text" id="hp"></div>
+                <div class="text" id="attack"></div>
+                <div class="text" id="defense"></div>
+                <div class="text" id="exp"></div>
+                <div class="text" id="gold"></div>
+                <div class="text" id="weapon"></div>
+                <div class="text" id="armor"></div>
+            </div>
+
+            <!--캐릭터 생성버튼-->
+            <div class="btn" id="createCharactor">캐릭터 생성</div>
+        </div>
+
+
+
+
+
+        <!--캐릭터 이미지-->
+        <div id="container2"></div>
+
+
+
+
+
+        <!--싸움 브라우저랑 상점이랑 전투시작-->
+        <div id="container3">
+            <!--싸움 브라우저-->
+            <div id="fight"></div>
+
+            <!--상점-->
+            <div id="shop">
+                <div class="item" id="sword">
+                    <div class="text">SWORD {$10}</div>
+                    <div class="buy" id="swordBuy">구매</div>
+                </div>
+                <div class="item" id="shield">
+                    <div class="text">SHIELD {$10}</div>
+                    <div class="buy" id="shieldBuy">구매</div>
+                </div>
+                <div class="item" id="potion">
+                    <div class="text">POTION {$5}</div>
+                    <div class="buy" id="potionBuy">구매</div>
+                </div>
+            </div>
+
+            <!--전투 시작버튼-->
+            <div class="btn" id="startGame"> 전투 시작</div>
+        </div>
+    </div>
+
+    <script src="../js/rpg.charactor.js"></script>
+</body>
+</html>

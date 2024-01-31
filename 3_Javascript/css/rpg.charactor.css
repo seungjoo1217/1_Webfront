@@ -1,0 +1,155 @@
+
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    box-sizing: border-box;
+    height: 965px;
+    font-family: '국립박물관문화재단클래식B';
+    margin: 0;
+    padding: 0;
+    background-image: url("../rpg/The-Witcher-video-games-PC-gaming-fantasy-art-Video-Game-Art-fantasy-city-1950157-wallhere.com.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 1900px 1000px;
+}
+
+
+/*경험치랑 캐릭터 생성버튼 컨테이너*/
+#container1 {
+    flex-basis: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#level {
+    flex-basis: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../rpg/나무판.jpg");
+    background-position: center center;
+    background-size: 400px 750px;
+    background-repeat: no-repeat;
+}
+.text {
+    color: white;
+    text-shadow: 3px 3px 0 black;
+    text-align: center;
+    font-size: 25px;
+    margin: 7px 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    flex-basis: 20%;
+    width: 100%;
+    background-image: url("../rpg/캐릭터생성버튼.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*캐릭터 이미지 컨테이너*/
+#container2 {
+    flex-basis: 40%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/*상점이랑 전투시작버튼 컨테이너*/
+#container3 {
+    flex-basis: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#fight {
+    flex-basis: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../rpg/나무판.jpg");
+    background-position: center center;
+    background-size: 400px 500px;
+    background-repeat: no-repeat;
+
+    overflow: auto;
+}
+#fight > div:first-child {
+    margin-top: 70px;
+}
+
+#shop {
+    flex-basis: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../rpg/나무판.jpg");
+    background-position: center center;
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy {
+    width: 60px;
+    height: 30px;
+    margin-left: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    line-height: 30px;
+    background-image: url("../rpg/캐릭터생성버튼.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60px 90px;
+    cursor: pointer;
+}
+
+.row {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: white;
+    text-shadow: 3px 3px 0 black;
+    font-weight: lighter;
+
+}
